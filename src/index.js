@@ -1,1 +1,3 @@
-alert("working");
+import { setHTML } from './initPage';
+
+setHTML();
