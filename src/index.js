@@ -5,6 +5,11 @@ import { setBody } from './home'
 const setHTML = () => {
   const header = setHeader();
   const footer = setFooter();
+  
+  // switch (tab.classList) {
+
+  // }
+
   const body = setBody();
 
 
