@@ -7,7 +7,36 @@ const setHeader = () => {
   heroName.textContent = "Alice's Restaurant";
   header.appendChild(heroName);
 
+  // Attach tabs
+  const tabs = setTabs();
+  header.appendChild(tabs);
+
   return header;
+}
+
+const setTabs = () => {
+  const tabsContainer = document.createElement('div');
+  tabsContainer.id = "tabs_container";
+
+  const div1 = document.createElement('div');
+  div1.className = 'tab';
+  div1.textContent = 'Home'
+  div1.id = 'home_tab'
+  tabsContainer.appendChild(div1);
+
+  const div2 = document.createElement('div');
+  div2.className = 'tab';
+  div2.textContent = 'Menu'
+  div2.id = 'menu_tab'
+  tabsContainer.appendChild(div2);
+
+  const div3 = document.createElement('div');
+  div3.className = 'tab';
+  div3.textContent = 'Contact'
+  div3.id = 'contact_tab'
+  tabsContainer.appendChild(div3);
+
+  return tabsContainer;
 }
 
 const setFooter = () => {
